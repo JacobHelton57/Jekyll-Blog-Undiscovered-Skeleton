@@ -17,6 +17,10 @@ Before following these instructions, you will need to [install the Jekyll Gem](h
     permalink: pretty
     exclude: ['README.md']
 
+### Set up additional directories
+1. Create `_includes` folder in root
+1. Create `layouts` folder in root
+
 ### Create default layout
 1. Add `default.html` layout to `_layouts`
 1. Copy entire `index.html` into `default.html`
