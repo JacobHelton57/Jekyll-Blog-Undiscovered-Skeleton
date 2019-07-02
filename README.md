@@ -54,6 +54,7 @@ Before following these instructions, you will need to [install the Jekyll Gem](h
 1. Replace post date with `{{post.date | date: "%b %d, %Y"}}`
 1. Replace author name with `{{post.author}}`
 1. Replace href to read more button with `{{site.baseurl}}{{ post.url }}`
+1. In `default.html`, fix stylesheet and favicon links using `{{site.baseurl}}`
 
 ### Create posts layout
 1. Add `post.html` layout to `_layouts`
@@ -89,4 +90,18 @@ Before following these instructions, you will need to [install the Jekyll Gem](h
 
 ### Make about page use `post` layout
 1. Add `layout: post` to about.html
+1. Create `about.md` file
+1. In front matter, add
+
+        ---
+        layout: post
+        title: About Me
+        author: Mr. Miyagi
+        banner_image: miyagi.jpg
+        thumbnail: miyagi.jpg
+        ---
+        
+1. Copy text over below front matter
+1. Delete about.html
+1. Refresh page
 
