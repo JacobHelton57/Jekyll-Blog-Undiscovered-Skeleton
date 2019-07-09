@@ -8,6 +8,8 @@ https://github.com/JacobHelton57/Jekyll-Blog-Undiscovered
 
 Before following these instructions, you will need to [install the Jekyll Gem](https://jekyllrb.com/docs/installation/). This process should be pretty straight forward.
 
+We'll be following along with the instructions below during the actual Undiscovered Session.
+
 # To-Do:
 
 ### Create `_config.yml` in root directory:
