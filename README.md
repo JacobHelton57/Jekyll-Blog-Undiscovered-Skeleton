@@ -21,7 +21,7 @@ We'll be following along with the instructions below during the actual Undiscove
 
 ### Set up additional directories
 1. Create `_includes` folder in root
-1. Create `layouts` folder in root
+1. Create `_layouts` folder in root
 
 ### Create default layout
 1. Add `default.html` layout to `_layouts`
