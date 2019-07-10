@@ -28,6 +28,7 @@ We'll be following along with the instructions below during the actual Undiscove
 1. Copy entire `index.html` into `default.html`
 1. Cut `.home-page` from`default.html` and paste in `index.html` in place of everything else
 1. Replace gap in `default.html` with `{{content}}` tag
+1. Add `layout:default` to index.html's front matter
 
 ### Make navbar an included file
 1. Create `nav.html` file in `_includes` directory
@@ -48,15 +49,15 @@ We'll be following along with the instructions below during the actual Undiscove
 1. Add the [paginator gem](https://gist.github.com/JacobHelton57/a448d7c8ea3b6617f1dd42b847805586) to the root of the project folder
 
 ### Get index.html to grab data from posts
-1. Change `posts/` directory name to `_posts/`
+1. Change `posts` directory name to `_posts`
 1. Delete all but one of the cards: we'll only need one
 1. Wrap card with `{% for post in paginator.posts%}` and `{% endfor %}`
+1. In `default.html`, fix stylesheet and favicon links using `{{site.baseurl}}`
 1. Add `{{post.title}}` and `{{post.excerpt}}` to `.title` and `.text` fields
 1. Replace img url with `{{site.baseurl}}/img/{{post.thumbnail}}`
 1. Replace post date with `{{post.date | date: "%b %d, %Y"}}`
 1. Replace author name with `{{post.author}}`
 1. Replace href to read more button with `{{site.baseurl}}{{ post.url }}`
-1. In `default.html`, fix stylesheet and favicon links using `{{site.baseurl}}`
 
 ### Create posts layout
 1. Add `post.html` layout to `_layouts`
